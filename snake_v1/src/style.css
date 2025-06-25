@@ -1,0 +1,65 @@
+#game {
+    border: 2px solid rgb(83, 243, 142);
+    background-color: black;
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+    box-shadow: 0 0 30px rgb(83, 243, 142);
+    background: rgb(24, 24, 24) ;
+    border-radius: 25px;
+    padding: 30px;
+    margin: 20px;
+}
+
+#start-btn {
+    pointer-events: all;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: azure;
+    background: black;
+    box-shadow: 0 0 5px rgb(83, 243, 142);
+    border: 1px solid rgb(83, 243, 142);
+    width: 200px;
+    height: 50px;
+    font: 20px bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+#canvas-container {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    margin: auto;
+}
+
+#score-box {
+    margin-top: 20px;
+}
+
+div {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+body {
+    margin: 30px;
+    background-color: black;
+    color: azure;
+    user-select: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
