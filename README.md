@@ -1,2 +1,2 @@
 # snake
-snake game
+snake gameto learn js
