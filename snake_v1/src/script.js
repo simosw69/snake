@@ -68,7 +68,7 @@ function startGame() {
   startBtnEl.style.opacity = '0';
   newApple();
   startTimer();
-  gameLoopId = setInterval(gameLoop, 200);
+  gameLoopId = setInterval(gameLoop, 150);
 }
 
 function newApple() {
@@ -95,11 +95,11 @@ function isAppleCaught(head) {
 }
 
 function isWin() {
-    if(snake.length == Math.pow(tileCount, 2)-1)
-        return true;
+  if (snake.length == Math.pow(tileCount, 2) - 1)
+    return true;
 
-    return false;
-} 
+  return false;
+}
 
 function gameLoop() {
   if (gameOver) {
@@ -112,11 +112,11 @@ function gameLoop() {
     return;
   }
 
-  if(isWin()) {
+  if (isWin()) {
     ctx.textAlign = 'center';
     ctx.fillStyle = 'white';
     ctx.font = '30px Arial';
-    ctx.fillText('Hai vinto!', canvas.width / 2, canvas.height / 2);
+    ctx.fillText('You won!', canvas.width / 2, canvas.height / 2);
     clearInterval(timerId);
     clearInterval(gameLoopId);
     return;
